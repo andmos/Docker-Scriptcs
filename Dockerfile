@@ -15,7 +15,7 @@ WORKDIR /opt/workdir/scriptcs/
 RUN nuget restore ./ScriptCs.sln
 RUN mkdir artifacts --parents
 RUN xbuild ./ScriptCs.sln /property:Configuration=Release /nologo /verbosity:normal
-RUN mono ./packages/xunit.runners.1.9.2/tools/xunit.console.clr4.exe test/ScriptCs.Tests.Acceptance/bin/Release/ScriptCs.Tests.Acceptance.dll /xml artifacts/ScriptCs.Tests.Acceptance.dll.TestResult.xml /html artifacts/ScriptCs.Tests.Acceptance.dll.TestResult.html
+RUN mono ./packages/xunit.runners.1.9.2/tools/xunit.console.clr4.exe test/ScriptCs.Tests.Acceptance/bin/Release/ScriptCs.Tests.Acceptance.dll 
 
 RUN apt-get clean
  

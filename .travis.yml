@@ -1,4 +1,4 @@
 sudo: require 
 services: 
     - docker 
-script: docker build -t andmos/scriptcs
+script: docker build -t andmos/scriptcs .

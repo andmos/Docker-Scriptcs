@@ -5,7 +5,7 @@ Run The REPL:
 
     docker run -it andmos/scriptcs:latest
 
-Or a ``csx``file: 
+Or a ``.csx``file: 
 
     docker run -it -v /path/to/file.csx:/test --workdir /test andmos/scriptcs:latest file.csx
 
